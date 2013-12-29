@@ -15,13 +15,13 @@ namespace ca {
             //    clientId: "",
             //    clientSecret: "");
 
-            OAuthWebSecurity.RegisterTwitterClient(
-                consumerKey: "ZZ4twtX1E7lLd2I1UKjOdA",
-                consumerSecret: "CryOUCyEy0PZODVoPF3UEBolVTru708SbPFvDlf03s");
-
             OAuthWebSecurity.RegisterFacebookClient(
                 appId: "659022654109831",
                 appSecret: "a976a01d356d36b3f4ab73a4a4f63ed9");
+
+            OAuthWebSecurity.RegisterTwitterClient(
+                consumerKey: "ZZ4twtX1E7lLd2I1UKjOdA",
+                consumerSecret: "CryOUCyEy0PZODVoPF3UEBolVTru708SbPFvDlf03s");
 
             OAuthWebSecurity.RegisterGoogleClient();
         }

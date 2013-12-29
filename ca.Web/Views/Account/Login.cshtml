@@ -1,10 +1,24 @@
-﻿@model ca.Models.LoginModel
-
-@{
-    ViewBag.Title = "Log in";
+﻿@{
+    Layout = null;
 }
-
-<section class="social" id="socialLoginForm">
-    <h2>Log in:</h2>
-    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
-</section>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>[CA]</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        @Styles.Render("~/bundles/styles")
+    </head>
+    <body class="login">
+        <section class="social-login-buttons full-width-line">
+            @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+        </section>
+        <nav>
+            <ul class="navigation full-width-line">
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Explore", "Index", "Explore")</li>
+                <li>@Html.ActionLink("Top", "Top", "Explore")</li>
+                <li>@Html.ActionLink("Search", "Search", "Explore")</li>
+            </ul>
+        </nav>
+    </body>
+</html>
