@@ -1,0 +1,10 @@
+﻿@model ca.Models.LoginModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+<section class="social" id="socialLoginForm">
+    <h2>Log in:</h2>
+    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+</section>
